@@ -4,11 +4,12 @@ Class: Card
  Fields:
     -rank:Rank
     -suit:Suit
-    -isFaceUp:bool
+    -faceUp:bool
 
  Properties:
-    +rank:Rank
-    +suit:Suit
+    +Rank:Rank
+    +Suit:Suit
+    +FaceUp:bool
 
  Methods:
     +FlipOver():void
@@ -29,28 +30,37 @@ public class Card
     //check the help documentation for the fields
     Rank rank;
     Suit suit;
-    bool isFaceUp;
+    bool faceUp;
 
     //Card Constructor
     public Card(Rank rank, Suit suit)
     {
         this.suit = suit;
         this.rank = rank;
-        this.isFaceUp = false;
+        this.faceUp = false;
     }
   
     //Define properties for all above fields
     //code example: public Suit Suit { get { return suit; } }
 
-    public Rank Rank{get {return rank;}}
+    public Rank Rank
+    {
+        get {return rank;}
+    }
 
-    public Suit Suit{get {return suit;}}
+    public Suit Suit
+    {
+        get {return suit;}
+    }
 
-    public bool IsFaceUp{get {return isFaceUp;}}
+    public bool FaceUp
+    {
+        get {return faceUp;}
+    }
 
     public void FlipOver()
     {
-        isFaceUp = !isFaceUp;
+        faceUp = !faceUp;
     }
         
 } 
