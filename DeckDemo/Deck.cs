@@ -1,3 +1,20 @@
+/*
+UML
+Class: Deck
+ Fields:
+    -cards:List<Card>
+
+ Properties:
+    +Cards:List<Card>
+
+ Methods:
+    +TakeTopCard():Card
+    +Shuffle():void
+    +Cut(Index):int
+
+ Constructor:
+    +Deck()
+*/
 using System;
 using System.Collections.Generic;
 using System.Linq;
